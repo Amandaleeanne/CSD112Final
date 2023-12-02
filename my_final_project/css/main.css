@@ -1,9 +1,134 @@
 @charset "utf-8";
+/**<h1>, fallback: "Brush Script MT", cursive**/
+@font-face {
+    font-family: 'MarackScript' ;
+    src: url('../fonts/Marck_Script/MarckScript-Regular.ttf');
+}
+/**Secondary font, fallback: Arial, Helvetica, sans-serif**/
+@font-face {
+    font-family: 'Kalam';
+    src: url("../fonts/Kalam/Kalam-Regular.ttf");
+}
+/**<p>, fallback: Garamond, serif**/
+@font-face {
+        font-family: 'Playfair Display';
+    src: url("../fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf");
+}
 
 /**The main CSS will contain the main colors, fonts, basic header, nav bar and footer. basically the elements that are the
 same throughout the website will be put in main. **/
+/**
+Backround color: #E4DBC6
+Text Color: #3A2E27
+Green main color: #7EA8A4
+Green Accent: #82A59F 45%
+**/
 
-/**TODO: Delete the Pre-existing code**/
- 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E4DBC6;
+}
 
+header{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #7EA8A4;
+
+    /*Children*/
+    & img {
+        width: 11.75em;
+        border-radius: 100%;
+        border: 0.5em solid #247A61
+    }
+    & div {
+        text-align: center;
+    }
+    & nav {
+        margin-top: 3%;
+        width: 100%;
+    }
+    & ul {
+        padding: 0 0;
+        margin: auto auto 0 auto ;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        max-width: 60%;
+
+        /*Children*/
+        & li{
+            padding: 0 2vw;
+            list-style: none;
+            background-color: #C0BFAA;
+            border-top-right-radius: 1.2em;
+            border-top-left-radius: 1.2em;
+            border: 0.5em solid #C0BFAA;
+            border-bottom: 0;
+            /*Children*/
+            & a {
+                font-family: 'Kalam', Arial, Helvetica, sans-serif;
+                color: #3A2E27;
+                font-size: 1.25em;
+                text-decoration: none;
+            }
+
+        }
+        #current {
+            background-color: #DED3BB;
+            border: 0.5em solid #DED3BB;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        }
+        
+    }
+
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-family: 'MarackScript', cursive;
+    color: #3A2E27;
+    font-size: 2.25em;
+
+}
+h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kalam', Arial, Helvetica, sans-serif;
+    color: #3A2E27;
+    font-size: 1.25em;
+}
+p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Diaplay', Garamond, serif;
+    color: #3A2E27;
+    font-size: 1.25em;
+}
+
+footer {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    background-color: #7EA8A4;
+    /*Children*/
+    & element {
+        margin: 2% auto;
+    }
+    & section nav ul {
+        list-style: none;
+        & li img {
+            width: 2.56em;
+            height: 2.56em;
+        }
+    }
+    
+}
 

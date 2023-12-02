@@ -1,0 +1,21 @@
+#highlighted-experience h1 {
+    text-align: center;
+}
+#highlighted-experience {
+    display:grid;
+    grid-template-areas: 
+    "h1 h1 h1 h1"
+    "section section section";
+    justify-content: space-between;
+}
+
+.experience-wrapper {
+    display: flex;
+    justify-self: start;
+    align-self: center;
+
+    p{
+        width: 20%;
+    }
+
+}

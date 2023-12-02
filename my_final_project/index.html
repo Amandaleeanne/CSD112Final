@@ -3,22 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="css\main.css">
+    <link rel="stylesheet" href="highlight_experience.css">
 </head>
+<!--@TODO: Optimize images-->
 <body>
     <header>
         <div class="outsite-image-container">
-            <img src="" alt=""> <!--TODO: Add img-->
+            <img src="images/1687457795152_20220626_194722-01.jpeg" alt="Image of smiling woman"> <!--TODO: Add img-->
         </div>
-        <h1>Amandaleeanne Schock</h1>
-        <h2>Reliable and motivated Student looking to use the skills learned in school to start a career as a Software Developer </h2>
+        <div id = "clickable">
+            <h1>Amandaleeanne Schock</h1>
+            <h2>Reliable, motivated, and hardworking Junior Software Developer </h2>
+        </div>
         <nav id = "main-nav">
             <ul>
-                <li><a href="#">Projects</a></li> <!--@TODO: drop down menu on top li element-->
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Experience</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="pages/explore_projects.html">Projects</a></li> <!--@TODO: Make ID 'current' work-->
+                <li><a href="pages/explore_education.html">Education</a></li>
+                <li><a href="pages/explore_experience.html">Experience</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -37,7 +41,7 @@
 
         <article id ="highlighted-experience">
             <h1>Highlighted Experience</h1>
-            <section class="experience-wrapper">
+            <section class="experience-wrapper" id="sec1">
                 <h2>Projects</h2>
                 <div class ="content-card">
                     <h1 href = "#">Title</h1>
@@ -49,7 +53,7 @@
                     Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris...</p>
                 </div>
             </section>
-            <section class="experience-wrapper">
+            <section class="experience-wrapper" id="sec2">
                 <h2>Education</h2>
                 <div class ="content-card">
                     <h1 href = "#">Title</h1>
@@ -61,7 +65,7 @@
                     Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris...</p>
                 </div>
             </section>
-            <section class="experience-wrapper">
+            <section class="experience-wrapper" id="">
                 <h2>Experience</h2>
                 <div class ="content-card">
                     <h1 href = "#">Title</h1>
