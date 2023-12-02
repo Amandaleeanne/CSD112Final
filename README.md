@@ -8,6 +8,6 @@ Project was designed in Figma through basic wireframing and coded in the VScode 
 
 - Streatch Goals: 
     - [ ] Create a website that is responsive to smaller devices.
-    - [ ] Include Javascript to create functional HTML forms .
+    - [ ] Include Javascript to create functional HTML forms.
     - [ ] Include JavaScript to create popups for Explore pages.
-    - [ ] Add CSS animation for futher polish
+    - [ ] Add CSS animation for futher polish.
