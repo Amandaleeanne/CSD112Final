@@ -1,0 +1,106 @@
+
+
+/*--------Global----------*/
+div {
+    font-family: 'Kalam', Arial, Helvetica, sans-serif;;
+}
+
+/*-------Body styles-----------*/
+main{
+    padding: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    background-image: url(../images/20230129_093316.jpg); /*@TODO*/
+    background-position: 50%;
+
+    /*Children*/
+    & form {
+        margin: auto;
+        width: max-content;
+
+        /*Children*/
+        & div{
+            margin: 2.5% auto;
+            width: 100%;
+        }
+        
+    }
+}
+
+input[type="submit"]{
+    
+    font-family: var(--h2);
+    border-radius: 0.63em;
+    border: 0;
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+input[type="text"]{
+    font-family: var(--p);
+    font-weight: 600;
+    color: var(--textColor);
+}
+input[type="email"]{
+    font-weight: 500;
+}
+
+/*--------Classes----------*/
+.color{
+    padding: 3%;
+    width: max-content;
+    width: max-content;
+    background-color: var(--backroundcolor);
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    box-shadow: 2px 0px 10px 9px rgba(0, 0, 0, 0.25);
+
+    /*Children*/
+    & h1 {
+        margin: auto;
+        margin-bottom: 1.5em;
+        width: max-content;
+        text-decoration: underline;
+    }
+}
+.hidden{
+    display: none;
+}
+.labelColor{
+    padding: 0.3em 0.6em;
+        background-color: var(--mainColor);
+        border-radius: 1.5em 1.5em 1.5em 1.5em;
+}
+.large_imput{
+    min-width: 100%;
+    max-width: 100em;
+    min-height:19.5em;
+    
+}
+
+
+/*------IDs------*/
+#text_imput{
+    margin-top: 0;
+}
+#email{
+    padding: 2%;
+    padding-right: 4%;
+    width:80%;
+    background-color: var(--mainColor);
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    border: 0px;
+    color: var(--textColor)
+    
+}
+#message{
+    min-width: 100%;
+    max-width: 60em;
+    min-height:19.5rem;
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+}
+
+/*---Change Globals--*/
+footer {
+    margin-top: 0;
+}
