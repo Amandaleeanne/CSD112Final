@@ -6,3 +6,4 @@ Students were tasked with creating a fully functional professional website utili
 ## More details:
 
 - Topic: To inform companies about me by showcasing my experience, education, and jobs more than a one-page resume could do to convince them to contact me for interviews.
+- Goal: Create a cohesive, pretty, and functional website.
