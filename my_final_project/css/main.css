@@ -42,7 +42,7 @@ body {
         list-style: none;
     }
     h1,h2 {
-        text-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.25)
+        text-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.25);
     }
 }
 
@@ -109,7 +109,7 @@ header{
             border-top-left-radius: 1.2em;
             border: 0 solid #C0BFAA;
             border-bottom: 0;
-            box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.25)
+            box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.25);
         }
         #current {
             background-color: #DED3BB;
@@ -141,25 +141,11 @@ footer {
         border :0.07em solid #3A2E27;
     }
     & a {
+        margin: auto auto;
         padding: 0 3%;
         background-color: #E4DBC6;
         border-radius: 1.5em;
         box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.25);
     }    
-}
-
-#explore{
-    min-width: 20%;
-}
-#explore ul {
-    display: flex;
-    
-    & li {
-        justify-self: center
-    }
-}
-
-#contact{
-    min-width: 15%;
 }
 
