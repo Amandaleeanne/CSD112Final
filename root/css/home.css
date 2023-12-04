@@ -1,0 +1,13 @@
+article#introduction {
+    margin: 5% 0;
+    padding: 4% 7%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(130, 165, 159, 0.45);
+    & h1 {
+        text-align: left;
+    }
+    & div{
+        padding: 2%;
+    }
+}

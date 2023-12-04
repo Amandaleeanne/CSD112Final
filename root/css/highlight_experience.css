@@ -1,21 +1,45 @@
-#highlighted-experience h1 {
-    text-align: center;
-}
-#highlighted-experience {
-    display:grid;
-    grid-template-areas: 
-    "h1 h1 h1 h1"
-    "section section section";
-    justify-content: space-between;
-}
-
-.experience-wrapper {
+#scroller{
+    margin: auto;
+    width: 99%;
     display: flex;
-    justify-self: start;
-    align-self: center;
+    justify-content: space-evenly;
 
-    p{
-        width: 20%;
+    & .card-wrapper{
+        margin: 3%;
+
+        & a{
+            text-align: left;
+            text-decoration: underline;
+        }
+        & h1{
+            text-align: left;
+            text-decoration: underline;
+        }
+        & div.content-card{
+            padding: 3%;
+            width: 13.94rem;
+            height: 11.4rem;
+            border: 0.3rem solid #7EA8A4;
+            border-radius: 1.5rem 1.5rem;
+            background: #7EA8A4;
+            & h2{
+                font-style: normal;
+            }
+            & p {
+                vertical-align: middle;
+            }
+        }
     }
-
+    & div.wrap{
+        margin-top: 6%;
+        display: flex;
+        justify-content: flex-end;
+        & a{
+            text-align: right;
+            padding: 1% 3%;
+            background: var(--accentColor);
+            border-radius:  0.5em 0.5em;
+        }
+    }
 }
+
