@@ -3,6 +3,7 @@ article#introduction {
     padding: 4% 7%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: rgba(130, 165, 159, 0.45);
     & h1 {
         text-align: left;

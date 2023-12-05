@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Explore: Education</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/explore_education.css">
 </head>
 <body>
     <header>
@@ -18,8 +19,8 @@
         </a>
         <nav id = "main-nav">
             <ul>
-                <li><a href="explore_projects.html">Projects</a></li> <!--@TODO: Make ID 'current' work-->
-                <li id = 'current'><a href="explore_education.html">Education</a></li>
+                <li id ='current'><a href="explore_education.html">Education</a></li>
+                <li><a href="explore_projects.html">Projects</a></li>
                 <li><a href="explore_experience.html">Experience</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -27,173 +28,78 @@
     </header>
     <main>
         <section id ="present">
-            <h1>Present</h1>
-            <div>something here to fill in the square, what it is is unknown</div>
-            <p>summerize the project</p>
+            <h1 id="label1">Present</h1>
+            <div class ="content-card" id="present1">
+                <h1>Bachelors Degree: Software Development</h1>
+                <h2>Lake washington technical college, 2023</h2>
+                <p>Advancement into tech industry and programming 
+                    knowledge. Will learn the about software 
+                    development and how to utilize those skills in 
+                    business. </p>
+            </div>
+            <div class ="content-card" id="present2">
+                <h1>Python Automation Bootcamp</h1>
+                <h2>Offered by Google, 2023</h2>
+                <p>A look into using python to manage files, when and how to use python for automation, using the cloud and more </p>
+            </div>
         </section>
 
         <section id = "past" class = "labled-content-scroller">
-            <h1>Past</h1>
+            <h1 id="past-head">Past</h1>
 
             <div class="card-container">
-                <div class ="content-card">
-                    <button class="open" type="button"><h1>Title</h1></button>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris...</p>
+                <div class ="content-card" id="associates">
+                    <h1>Associates Degree: Computer Science</h1>
+                    <h2>Cascadia CC, 2020-2022</h2>
+                    <p id="1">An associates degree with a focus on programming and science.</p>
+                    <div class="cas-grid">
+                        <h2 id="2">Notable classes:</h2>
+                        <div id="programming">
+                            <h1 id="pro-h1">Programming 115, 142, 143:</h1>
+                            <h2 id="pro-h2">Total time: 1yr</h2>
+                            <p id="pro-p">
+                                Used Java to learn basic and intermediate programming logic, and explore data structures and algorithms.
+                                Used Github to share and publish projects
+                            </p>
+                        </div>
+                        <div id="stem">
+                            <h1 id="stem-h1">General STEM classes:</h1>
+                            <p id="stem-p">
+                                focused on honing mathematical, problem-solving, project 
+                            management, and teamwork abilities. Physics and 
+                            Calculus increased problem-solving abilities while 
+                            applying real-world applications to conceptual 
+                            topics
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class ="content-card-expanded"> <!--@TODO: using this example: https://www.geeksforgeeks.org/how-to-create-popup-box-using-html-and-css/ make the popup idea-->
-                    <h1>Title</h1>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris.
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.  </p>
-                    <button class="close" type="button">Close</button>
-                </div>
-
-                <div class ="content-card">
-                    <button class="open" type="button"><h1>Title</h1></button>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris...</p>
-                </div>
-                <div class ="content-card-expanded">
-                    <h1>Title</h1>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris.
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.  </p>
-                    <button class="close" type="button">Close</button>
-                </div>
-
-                <div class ="content-card">
-                    <button class="open" type="button"><h1>Title</h1></button>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris...</p>
-                </div>
-                <div class ="content-card-expanded">
-                    <h1>Title</h1>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris.
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.  </p>
-                    <button class="close" type="button">Close</button>
-                </div>
-
             </div>
+            <section id="past-side">
+                <div class="card-container">
+                    <div class ="content-card" id="hs">
+                        <h1>HIghschool Diploma</h1>
+                        <h2>2018-2022</h2>
+                        <p>General STEM studies, In 2020 attended highschool and college simultaniously to achieve Associates and HS degree utilizing college classes.</p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class ="content-card" id="python">
+                        <h1>Python Certification</h1>
+                        <h2>Offered by Google, Nov 2023</h2>
+                        <p>Certificationcertifying that I have a grasp on the syntax of python as well as the basic data stuctures involved.</p>
+                    </div>
+                </div>
+            </section>
         </section>
 
         <!--Note: Future education layout may want to be changed-->
         <section id = "future" class = "labled-content-scroller">
-            <h1>future</h1>
-
-            <div class="card-container">
-                <div class ="content-card">
-                    <button class="open" type="button"><h1>Title</h1></button>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris...</p>
-                </div>
-                <div class ="content-card-expanded"> <!--@TODO: using this example: https://www.geeksforgeeks.org/how-to-create-popup-box-using-html-and-css/ make the popup idea-->
-                    <h1>Title</h1>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris.
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.  </p>
-                    <button class="close" type="button">Close</button>
-                </div>
-
-                <div class ="content-card">
-                    <button class="open" type="button"><h1>Title</h1></button>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris...</p>
-                </div>
-                <div class ="content-card-expanded">
-                    <h1>Title</h1>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris.
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.  </p>
-                    <button class="close" type="button">Close</button>
-                </div>
-
-                <div class ="content-card">
-                    <button class="open" type="button"><h1>Title</h1></button>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris...</p>
-                </div>
-                <div class ="content-card-expanded">
-                    <h1>Title</h1>
-                    <h2>h2 details details</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean. Tempor orci eu lobortis elementum nibh. 
-                    Vestibulum lectus mauris ultrices eros in. Et magnis dis parturient montes nascetur ridiculus mus mauris.
-                    Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.Aliquet lectus proin nibh nisl. Vulputate eu scelerisque felis imperdiet proin fermentum leo. 
-                    Libero enim sed faucibus turpis in eu mi bibendum neque. Urna molestie at elementum eu facilisis sed odio. 
-                    Elementum eu facilisis sed odio morbi quis commodo odio aenean.  </p>
-                    <button class="close" type="button">Close</button>
-                </div>
-
+            <h1>Future:</h1>
+            <p>My future education looks bright with my determination to contiue to explore bootcamps outside of 
+                college classes. I wish to expand into C, C#, SQL, Cloud computing, AI,  and hone problem solving skills on Codewars. 
+            </p>
+            
             </div>
         </section>
     </main>

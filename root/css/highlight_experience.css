@@ -21,6 +21,7 @@
             height: 11.4rem;
             border: 0.3rem solid #7EA8A4;
             border-radius: 1.5rem 1.5rem;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
             background: #7EA8A4;
             & h2{
                 font-style: normal;
