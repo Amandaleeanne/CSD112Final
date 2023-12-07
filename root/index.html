@@ -7,7 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/highlight_experience.css">
-    <link rel="stylesheet" href="css/home.css"
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <!--@TODO: Optimize images-->
 <body>
@@ -22,6 +22,7 @@
         </a>
         <nav id = "main-nav">
             <ul>
+                <li id="current"><a href="index.html">About <img class="imgnodec" src="images/25694.png" alt="home icon"></a></li>
                 <li><a href="pages/explore_education.html">Education</a></li>
                 <li><a href="pages/explore_projects.html">Projects</a></li>
                 <li><a href="pages/explore_experience.html">Experience</a></li>
@@ -29,8 +30,8 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <article id = "introduction">
+    <main class="fade-in">
+        <article id = "introduction" class="fade-in-delay">
             <div>
                 <h1>Who am i?</h1>
                 <p> Hello! My name is Amandaleeanne Schock. I am a hardworking college student wanting to break into the IT industry very soon! 
@@ -47,7 +48,7 @@
                 </p>
 
             </div> 
-                <img src="images/Rectangle 7.png" alt="blue square"> <!--@TODO: find and Add img -->
+                <img id ="indeximg2" src="images/ideximg2.webp" alt="blue square"> <!--@TODO: find and Add img -->
         </article>
 
         <article id ="highlighted-experience">
@@ -56,7 +57,7 @@
                 <div class="card-wrapper">
                     <a href="pages/explore_projects.html">Projects ></a>
                     <div class ="content-card">
-                        <h1 href = "#">CSD112 Final Project</h1>
+                        <h1>CSD112 Final Project</h1>
                         <p>Tasked to create a website using correct web design and development tequniques.</p>
                     </div>
                     <div class="wrap">
@@ -66,7 +67,7 @@
                 <div class="card-wrapper">
                     <a href="pages/explore_education.html">Education ></a>
                     <div class ="content-card">
-                        <h1 href = "#">Associates Degree(AAS-T)</h1>
+                        <h1>Associates Degree(AAS-T)</h1>
                         <p>Associates in computer science with focus on math and programming. </p>
                     </div>
                     <div class="wrap">
@@ -76,7 +77,7 @@
                 <div class="card-wrapper">
                     <a href="pages/explore_experience.html">Experience</a>
                     <div class ="content-card">
-                        <h1 href = "#">Jovie</h1>
+                        <h1>Jovie</h1>
                         <p>Assisted many families(clients) with varying indivudual needs to help thier children.</p>
                     </div>
                     <div class="wrap">
@@ -93,19 +94,25 @@
         -->
     </main>
     <footer> <!--Will be the wrapper ?-->
-        <section id = "contact">
+        <div id = "contact">
             <h1>Amandaleeanne Schock</h1>
             <h2>The best pick for your next intern candidate</h2>
             <a href="pages/contact.html">Contact</a>
-        </section>
-        <section id = "links">
+        </div>
             <nav id="social-nav">
                 <ul>
-                    <li><img href= "www.linkedin.com/in/amandaleeanne-schock-86422a244" src="images/LI-In-Bug.png" alt="linkedin logo, links to exernal site"></li>
-                    <li><img href= "https://github.com/Amandaleeanne" src="images/github-mark.png" alt="GitHub logo, links to exernal site"></li>
+                    <li>
+                        <a class="nodec" href= "www.linkedin.com/in/amandaleeanne-schock-86422a244" >
+                            <img src="images/LI-In-Bug.png" alt="linkedin logo, links to exernal site">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nodec" href= "https://github.com/Amandaleeanne">
+                            <img  src="images/github-mark.png" alt="GitHub logo, links to exernal site">
+                        </a>
+                    </li>
                 </ul>
             </nav>
-        </section>
     </footer>
 </body>
 </html>

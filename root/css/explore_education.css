@@ -6,33 +6,38 @@ main{
     "future future"
     ;
     justify-content: space-evenly;
-
-    & section{
+}
+    /*Children*/
+    main section{
         margin: 2% 5%;
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        & h1{
+    }
+        /*Children*/
+        main section h1{
             text-decoration: underline;
             font-family: var(--h2);
             font-weight: 500;
         }
-        & div {
+        main section div {
             padding: 3%;
             background-color: var(--accentColor);
             border: 2% solid var(--accentColor);
             border-radius: 1.5rem;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-            & h1{
+        }
+            /*Children*/
+            main section div h1{
                 padding-left: 0;
             }
-            & p {
+            main section div p#notop{
+                margin-top: 0;
+            }
+            main section div p {
                 margin-top: 3%;
             }
-        }
-    }
-}
+/*--End Main--*/
 #present{
     display: grid;
     grid-template-areas: 
@@ -41,12 +46,11 @@ main{
     ;
     justify-items:center;
     align-items: stretch;
-
-    & div{
+}
+    /*Children*/
+    #present div{
         max-width: 80%;
     }
-
-}
 #past{
     display: grid;
     grid-template-areas:
@@ -57,11 +61,11 @@ main{
 }
 #past-side {
     height: 100%;
-    .card-container{
-        margin-bottom: 6%;
-        max-width: 80%;
-        }
 }
+.card-container{
+    margin-bottom: 6%;
+    max-width: 80%;
+    }
 #future{
     text-align: center;
 }
@@ -112,7 +116,7 @@ main{
 }
 
 /*Media*/
-@media (max-width: 900){
+@media (max-width: 900px){
     main{
         grid-template-areas: 
         "present"

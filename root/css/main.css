@@ -45,8 +45,8 @@
   100% {
         -webkit-box-shadow: -4px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
         box-shadow: -4px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
-        background-color: var(--navCurrentColor);
-        border: 0 solid var(--navCurrentColor);
+        background-color: var(--backroundcolor);
+        border: 0 solid var(--backroundcolor);
   }
 }
 @keyframes shadow-inset-tl {
@@ -57,43 +57,50 @@
     box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
   }
   100% {
-    background-color: var(--navCurrentColor);
-    border: 0 solid var(--navCurrentColor);
+    background-color: var(--backroundcolor);
+    border: 0 solid var(--backroundcolor);
     -webkit-box-shadow: -4px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
     box-shadow: -4px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
   }
 }
+
 /**
  * ----------------------------------------
- * animation shadow-inset-tl-reverse
+ * animation fade-in
  * ----------------------------------------
  */
- @-webkit-keyframes shadow-inset-tl-reverse {
-    0% {
-        background-color: var(--navCurrentColor);
-        border: 0 solid var(--navCurrentColor);
-        box-shadow: -4px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
-    }
-    100% {
-        background-color: var(--navColor);
-        border: 0 solid var(--navColor);
-        box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.25);
-    }
-  }
-  @keyframes shadow-inset-tl-reverse {
-    0% {
-        background-color: var(--navCurrentColor);
-        border: 0 solid var(--navCurrentColor);
-        box-shadow: -4px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
-    }
-    100% {
-        background-color: var(--navColor);
-        border: 0 solid var(--navColor);
-        box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.25);
-    }
-  }
+ @keyframes fade {
+	0% {
+		opacity: 0;
+	}
 
+	100% {
+		opacity: 1;
+	}
+}
+.fade-in{
+    animation: fade 1s ease 0s 1 normal forwards;
+}
 
+/**
+*--------------------------------
+* animation fade-in-delay
+*--------------------------------
+*/
+@keyframes fade-delay {
+	0% {
+		opacity: 0;
+	}
+    20%{
+        opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+.fade-in-delay{
+    animation: fade-delay 1s ease 0s 1 normal forwards;
+}
 
 /**The main CSS will contain the main colors, fonts, basic header, nav bar and footer. basically the elements that are the
 same throughout the website will be put in main. **/
@@ -102,24 +109,25 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--backroundcolor);
-
-    & a {
+}
+    /*Children*/
+    body a {
         text-decoration: none;
         font-family: var(--h2);
         color: var(--textColor);
         font-size: 1.25em;
+        /*Children*/
         &:visited {
             color: #493930;
         }
     }
-    & ul, li {
+    ul, li {
         list-style: none;
     }
     h1,h2 {
         text-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.25);
     }
-}
-
+/*End body*/
 h1{
     margin: 0;
     padding: 0;
@@ -153,30 +161,33 @@ header{
     align-items: center;
     justify-content: center;
     background-color: var(--mainColor);
-
-    /*Children*/
-    & img {
+}/*Children*/
+    header img {
         width: 11.75em;
         border-radius: 100%;
         border: 0.5em solid #247A61
     }
+    header img.imgnodec{
+        width: 0.7em;
+        height: 0.7em;
+        border: none;
+    }
     .clickable:hover {
         cursor: pointer;
     }
-    & nav {
+    header nav {
         margin-top: 3%;
         width: 100%;
     }
-    & ul {
+    header ul {
         padding: 0 0;
         margin: auto auto 0 auto ;
         margin-bottom: 0;
         display: flex;
         justify-content: space-around;
         max-width: 60%;
-
-        /*Children*/
-        & li{
+    }/*Children*/
+        header ul li{
             padding: 1vh 2vw 0 2vw;
             background-color: var(--navColor);
             border: 0 solid var(--navColor);
@@ -184,22 +195,22 @@ header{
             border-top-right-radius: 1.2em;
             border-top-left-radius: 1.2em;
             box-shadow: -2px 0px 0px 0px rgba(0, 0, 0, 0.25);
+    }/*Children*/
+        header ul li:hover{
+            -webkit-animation: shadow-inset-tl 0.4s ease-in both;
+            animation: shadow-inset-tl 0.4s ease-in both;
 
-            &:hover{
-                -webkit-animation: shadow-inset-tl 0.4s ease-in both;
-	            animation: shadow-inset-tl 0.4s ease-in both;
-
-            }
+        }
+        header ul li a{
+            vertical-align: middle;
         }
         #current {
-            background-color: var(--navCurrentColor);
+            background-color: var(--backroundcolor);
             border: 0 solid var(--navCurrentColor);
             box-shadow: -4px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
         }
-        
-    }
-
-}
+    
+/*--End Header--*/
 footer {
     margin-top: 2%;
     padding: 2%;
@@ -207,13 +218,12 @@ footer {
     justify-content: space-between;
     vertical-align: baseline;
     background-color: var(--mainColor);
-
-    /*Children*/
-    & h1 {
+}/*Children*/
+    footer h1 {
         text-align: left;
         text-decoration: underline;
     }
-    & img {  
+    footer img {  
         width: 2.56em;
         height: 2.56em;
     }
@@ -221,14 +231,22 @@ footer {
         margin: 0 0;
         border :0.07em solid var(--textColor);
     }
-    & a {
+    footer a {
         margin: auto auto;
         padding: 0 3%;
         background-color: var(--backroundcolor);
         border-radius: 1.5em;
         box-shadow: 2px 0px 0px 0px rgba(0, 0, 0, 0.25);
     }
-}
+    footer a.nodec{
+        margin: 0 0;
+        padding: 0 0;
+        width: 2.56em;
+        height: 2.56em;
+        background-color: transparent;
+        border-radius: 0;
+        box-shadow: none;
+    }
 
 /*------Scrollbar-------*/
 /* Scrollbar Track */

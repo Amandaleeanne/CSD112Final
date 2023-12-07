@@ -19,6 +19,7 @@
         </a>
         <nav id = "main-nav">
             <ul>
+                <li><a href="../index.html">About <img class="imgnodec" src="../images/25694.png" alt="home icon"></a></li>
                 <li><a href="explore_education.html">Education</a></li>
                 <li><a href="explore_projects.html">Projects</a></li>
                 <li id = 'current'><a href="explore_experience.html">Experience</a></li>
@@ -26,7 +27,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="fade-in">
         <section id ="present">
             <h1>Present</h1>
             <div class="card-container">
@@ -60,11 +61,8 @@
         </section>
         <!--Note: Future experience layout may want to be changed (such as goals)-->
         <section id = "future" class = "labled-content-scroller">
-            <div id="noborder">
                 <h1>Future Goals:</h1>
-                <h2>I wish to be a:</h2>
-            </div>
-                <div class="card-container">
+                <div class="card-container fade-in-delay">
                     <div class ="content-card">
                         <h1>Software Developer Intern</h1>
                         <h2>By 2024</h2>
@@ -85,19 +83,26 @@
         </section>
     </main>
     <footer> <!--Will be the wrapper ?-->
-        <section id = "contact">
+        <div id = "contact">
             <h1>Amandaleeanne Schock</h1>
             <h2>The best pick for your next intern candidate</h2>
             <a href="contact.html">Contact</a>
-        </section>
+        </div>
 
             <nav id="social-nav">
                 <ul>
-                    <li><img href= "www.linkedin.com/in/amandaleeanne-schock-86422a244" src="../images/LI-In-Bug.png" alt="linkedin logo, links to exernal site"></li>
-                    <li><img href= "https://github.com/Amandaleeanne" src="../images/github-mark.png" alt="GitHub logo, links to exernal site"></li>
+                    <li>
+                        <a class="nodec" href= "www.linkedin.com/in/amandaleeanne-schock-86422a244" >
+                            <img src="../images/LI-In-Bug.png" alt="linkedin logo, links to exernal site">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nodec" href= "https://github.com/Amandaleeanne">
+                            <img  src="../images/github-mark.png" alt="GitHub logo, links to exernal site">
+                        </a>
+                    </li>
                 </ul>
             </nav>
-        </section>
     </footer>
 </body>
 </html>

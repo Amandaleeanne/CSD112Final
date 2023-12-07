@@ -12,13 +12,13 @@
         <a class= 'clickable' href= '../index.html'>
             <img src="../images/me_op_large.webp" alt="Image of smiling woman">
         </a>
-    
         <a class= 'clickable' href="../index.html">
             <h1>Amandaleeanne Schock</h1>
             <h2>Reliable, motivated, and hardworking Junior Software Developer </h2>
         </a>
         <nav id = "main-nav">
             <ul>
+                <li><a href="../index.html">About <img class="imgnodec" src="../images/25694.png" alt="home icon"></a></li>
                 <li><a href="explore_education.html">Education</a></li>
                 <li><a href="explore_projects.html">Projects</a></li>
                 <li><a href="explore_experience.html">Experience</a></li>
@@ -26,9 +26,9 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="fade-in">
         
-        <div class="color">
+    <div class="color fade-in-delay">
             <h1>Contact me!</h1>
         <form>
             <div id="text_imput">
@@ -36,7 +36,7 @@
                 <input type="email" id = "email" name="email" placeholder="someone@email.com">
             </div>
             <div class="radio">
-                <label for="reason">Reason:</label>
+                <label>Reason:</label>
 
                 <input type="radio" id="option1" name="reason" value="job">
                 <label for="option1" class="labelColor">Job Opportunity</label>
@@ -49,13 +49,13 @@
             </div>
             <div class="large_imput">
                 <label for="message" class ="hidden">Message</label>
-                <textarea type="text" id="message" name="large_imput"></textarea>
+                <textarea id="message" name="large_imput"></textarea>
             </div>
             <div class="button-container">
                 <input type="submit" id="button" name="button">
             </div>
         </form>
-        </div>
+    </div>
     </main>
     <footer> <!--Will be the wrapper ?-->
         <section id = "contact">
@@ -78,8 +78,16 @@
         <section id = "links">
             <nav id="social-nav">
                 <ul>
-                    <li><img href= "www.linkedin.com/in/amandaleeanne-schock-86422a244" src="../images/LI-In-Bug.png" alt="linkedin logo, links to exernal site"></li>
-                    <li><img href= "https://github.com/Amandaleeanne" src="../images/github-mark.png" alt="GitHub logo, links to exernal site"></li>
+                    <li>
+                        <a class="nodec" href= "www.linkedin.com/in/amandaleeanne-schock-86422a244" >
+                            <img src="../images/LI-In-Bug.png" alt="linkedin logo, links to exernal site">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nodec" href= "https://github.com/Amandaleeanne">
+                            <img  src="../images/github-mark.png" alt="GitHub logo, links to exernal site">
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </section>

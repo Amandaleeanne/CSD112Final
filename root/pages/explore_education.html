@@ -19,6 +19,7 @@
         </a>
         <nav id = "main-nav">
             <ul>
+                <li><a href="../index.html">About <img class="imgnodec" src="../images/25694.png" alt="home icon"></a></li>
                 <li id ='current'><a href="explore_education.html">Education</a></li>
                 <li><a href="explore_projects.html">Projects</a></li>
                 <li><a href="explore_experience.html">Experience</a></li>
@@ -26,10 +27,10 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="fade-in">
         <section id ="present">
-            <h1 id="label1">Present</h1>
-            <div class ="content-card" id="present1">
+            <h1 class ="fade-in" id="label1">Present</h1>
+            <div class ="content-card fade-in" id="present1">
                 <h1>Bachelors Degree: Software Development</h1>
                 <h2>Lake washington technical college, 2023</h2>
                 <p>Advancement into tech industry and programming 
@@ -37,7 +38,7 @@
                     development and how to utilize those skills in 
                     business. </p>
             </div>
-            <div class ="content-card" id="present2">
+            <div class ="content-card fade-in-delay" id="present2">
                 <h1>Python Automation Bootcamp</h1>
                 <h2>Offered by Google, 2023</h2>
                 <p>A look into using python to manage files, when and how to use python for automation, using the cloud and more </p>
@@ -87,7 +88,7 @@
                     <div class ="content-card" id="python">
                         <h1>Python Certification</h1>
                         <h2>Offered by Google, Nov 2023</h2>
-                        <p>Certificationcertifying that I have a grasp on the syntax of python as well as the basic data stuctures involved.</p>
+                        <p>Certification certifying that I have a grasp on the syntax of python as well as the basic data stuctures involved.</p>
                     </div>
                 </div>
             </section>
@@ -96,27 +97,33 @@
         <!--Note: Future education layout may want to be changed-->
         <section id = "future" class = "labled-content-scroller">
             <h1>Future:</h1>
-            <p>My future education looks bright with my determination to contiue to explore bootcamps outside of 
-                college classes. I wish to expand into C, C#, SQL, Cloud computing, AI,  and hone problem solving skills on Codewars. 
-            </p>
-            
+            <div>
+                <p id="notop">My future education looks bright with my determination to contiue to explore bootcamps outside of 
+                    college classes. I wish to expand into C, C#, SQL, Cloud computing, AI,  and hone problem solving skills on Codewars. 
+                </p>
             </div>
         </section>
     </main>
     <footer> <!--Will be the wrapper ?-->
-        <section id = "contact">
+        <div id = "contact">
             <h1>Amandaleeanne Schock</h1>
             <h2>The best pick for your next intern candidate</h2>
             <a href="contact.html">Contact</a>
-        </section>
-        <section id = "links">
+        </div>
             <nav id="social-nav">
                 <ul>
-                    <li><img href= "www.linkedin.com/in/amandaleeanne-schock-86422a244" src="../images/LI-In-Bug.png" alt="linkedin logo, links to exernal site"></li>
-                    <li><img href= "https://github.com/Amandaleeanne" src="../images/github-mark.png" alt="GitHub logo, links to exernal site"></li>
+                    <li>
+                        <a class="nodec" href= "www.linkedin.com/in/amandaleeanne-schock-86422a244" >
+                            <img src="../images/LI-In-Bug.png" alt="linkedin logo, links to exernal site">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nodec" href= "https://github.com/Amandaleeanne">
+                            <img  src="../images/github-mark.png" alt="GitHub logo, links to exernal site">
+                        </a>
+                    </li>
                 </ul>
             </nav>
-        </section>
     </footer>
 </body>
 </html>
